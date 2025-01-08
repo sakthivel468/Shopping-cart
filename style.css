@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+body{
+    overflow: hidden;
+}
+#bg{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    height: 100vh;
+    background: url("/imageCarsouel/background.jpg.jpg");
+    overflow-x: hidden;
+}
+    
+#outerdiv{
+    width: 923px;
+    height: 615px;
+    border: 2px solid rgb(247, 203, 6);
+}
+img{
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+#shopname{
+    background: linear-gradient(90deg, rgb(0, 252, 168) 0%, rgb(238, 2, 159) 35%, rgb(245, 160, 3) 100%);
+    font-family: "Geologica", sans-serif;
+    font-weight: 200px;
+    font-size: 100px;
+    color: rgb(8, 4, 4);
+    padding-left: 10px;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+nav{
+    background-color: rgb(10, 247, 42);
+    color: white;
+    padding: 10px ;
+}
+ul li{
+    list-style: none;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+ul li:hover{
+    color: rgb(255, 0, 157);
+}
+.btn{
+    padding: 0 !important;
+    color: white !important;
+    font-weight: 600 !important;
+    outline: none !important;
+    border: none !important;
+    font-size: 20px !important;
+}
+.btn:hover{
+    color: rgb(230, 10, 120) !important;
+}
+
+.imgbox{
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    transition: 0.25s;
+}
+.imgbox:hover{
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+.container-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rupee{
+   display: flex;
+   justify-content: space-between
+}
+.wrapper{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 3px;
+    background-color: rgb(22, 158, 192);
+}
+.rupees{
+    margin: 10px 0 10px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(24, 14, 14);
+}
+.btn-cart{ 
+    line-height: 2px;
+    border-radius: 2px;
+    font-size: 16px !important;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: rgb(50, 7, 240);
+    color: #fff;
+    font-weight: 600;
+}
+.alignside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(22, 158, 192);
+}
+#imgsize{
+    object-fit: contain;
+}
+.cart-page{
+    width: 270px;
+    min-height: 692px;
+    position: absolute;
+    background-color: #fff;
+    right: -1000000px;
+    z-index: 999;
+    transition: 0.5s;
+}
+.cart-amt{
+    font-weight: 600;
+}
+#mark{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: rgb(0, 4, 255);
+    cursor: pointer;
+} 
+#mark:hover{
+    color: rgb(242, 5, 250);
+    transition: 0.5s;
+}
+.cart-count{
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    text-align: center;
+    background-color: black;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    line-height: 12px;
+}
+
+.cart-active{
+    right: 0;
+    top: 20px;
+}
+.total{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.cart-heading{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+.ruler{
+    margin: 0px;
+    margin-top: 10px;
+}
+@media screen and (max-width:599px) {
+    ul li{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 16px !important;
+    }
+    .alignside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:514px) {
+    ul li{
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 12px !important;
+    }
+    .alignside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.cart-img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border: 1px solid rgba(161, 159, 159,0.5); 
+}
+.alignname{
+    display: flex;
+}
+input{
+    width: 50px;
+    height: 25px;
+    background-color: rgba(192, 189, 189,0.6);
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.bag{
+    margin: 0;
+    font-weight: 600;
+}
+.adject{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.price{
+    font-weight: 500;
+    text-align: start;
+    margin: 0;
+}
+.trashi{
+    text-align: center;
+    color: red;
+    cursor: pointer;
+}
+.scale{
+    margin: 0;
+}
+#check-btn{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+.checkout{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+h5{
+    text-align: center;
+    margin-top: 10px !important;
+}
+.idTag{
+    visibility: hidden;
+}
+.online{
+    position: absolute;
+    top:-10000px;
+    width: 400px;
+    height: 340px;
+    padding: 10px 0 0 30px;
+}
+.atmCard{
+    z-index: 599999;
+    left: 550px;
+    top: 200px;
+    background-color: rgb(150, 8, 245);
+    border-radius: 15px;
+    color: black;
+}
+
+.card{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: transparent;
+}
+.cardNum{
+    border: 1px solid #fcf9f9;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+.cardHeading{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-weight:600;
+}
+.cardInp{
+    width: 85%;
+    height: 100%;
+    color: white;
+    font-size: 22px;
+    border-radius: 0px;
+    background: transparent;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+::placeholder{
+    color: #fff;
+}
+.spinner{
+    -moz-appearance: textfield;
+}
+.spinner::-webkit-inner-spin-button,#spinner::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.mdiv{
+    border: 1px solid white;
+}
+.cv{
+    width: 100px;
+   background: transparent;
+    border-radius: 0;
+    border:1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+.mcv{
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+}
+
