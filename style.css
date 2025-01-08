@@ -7,7 +7,7 @@ body{
     justify-content: center;
     padding-top: 20px;
     height: 100vh;
-    background: url("/imageCarsouel/background.jpg.jpg");
+    background: url("./imageCarsouel/background.jpg.jpg");
     overflow-x: hidden;
 }
     
